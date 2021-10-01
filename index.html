@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="javascript.jsx"></script>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Genshin Impact Survey Form</h1>
+    <p id="description" class="description text-center">
+      Dear Travelers,
+
+the "Genshin Impact Survey" is here!
+Tell Paimon what you think of Genshin Impact's Gaming experience. We will look at the survey results carefully, and make adjustments to these main aspects
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">User name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your ingame name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>What is the weapon of your current main character</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select Character Weapon</option>
+        <option value="Bows">Bows</option>
+        <option value="Catalysts">Catalysts</option>
+        <option value="Claymores">Claymores</option>
+        <option value="Polearms">Polearms</option>
+        <option value="Swords">Swords</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend Genshin Impact to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite feature of Genshin Impact?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="challenges">Daily Challenges</option>
+        <option value="Combat system">Combat system using elemental magic</option>
+        <option value="Character switching">Character switching</option>
+        <option value=">Gacha">Gacha monetization system</option>
+        <option value="open-world environment">Open-world environment</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What would you like to see improved?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="Graphic design"
+          type="checkbox"
+          class="input-checkbox"
+        />Graphic design</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="Sound Effects"
+          type="checkbox"
+          class="input-checkbox"
+        />Sound Effects</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Domain rewards"
+          type="checkbox"
+          class="input-checkbox"
+        />Domain rewards</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="challenges"
+          type="checkbox"
+          class="input-checkbox"
+        />Daily Challenges</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="open-map"
+          type="checkbox"
+          class="input-checkbox"
+        />World Map</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="UI Design"
+          type="checkbox"
+          class="input-checkbox"
+        />UI Design</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Controls"
+          type="checkbox"
+          class="input-checkbox"
+        />Controls</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Gacha System"
+          type="checkbox"
+          class="input-checkbox"
+        />Gacha System</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Character Voice"
+          type="checkbox"
+          class="input-checkbox"
+        />Character Voice</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Events"
+          type="checkbox"
+          class="input-checkbox"
+        />Additional Events</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Character"
+          type="checkbox"
+          class="input-checkbox"
+        />Additional Character</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Weapons"
+          type="checkbox"
+          class="input-checkbox"
+        />Additional Weapons</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Type here..."
+      required></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button"><span>
+        Submit
+      </span></button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
